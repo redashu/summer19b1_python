@@ -1,11 +1,13 @@
 #!/usr/bin/python3
 
 import  sys
+import os
 
 file_names=sys.argv[1:]
 
 #  now  creating  emptyfile
 
 for  i  in  file_names:
-	f=open(i,'w')
-	f.close()
+	if(not os.path.exists(i)): #creates only if a directory or file does not exists.
+		f=open(i,'w')
+		f.close()
