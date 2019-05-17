@@ -20,3 +20,11 @@ EOF
 yum   install  python3*   -y
 pip3   install  jupyter  
 
+
+<<X
+
+jupyter-notebook --no-browser  --ip=0.0.0.0  --port=9999   &>/dev/null & 
+jupyter-notebook  list
+
+X
+
