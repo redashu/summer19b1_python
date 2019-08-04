@@ -7,6 +7,5 @@ file_name=sys.argv[1]
 
 f=open(file_name)    #  by default  mode of file is read 
 for  i  in  f:
-	print(i)
+	print(i, end="")   # by default print executes end= "\n" setting it to nil or ""
 
-#  improvement   --- remove  extra new line  from  this code output 
