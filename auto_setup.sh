@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# new line 
 cat    <<EOF     >/etc/yum.repos.d/a.repo
 [a]
 baseurl=http://13.234.66.67/summer19/kubernetes/
